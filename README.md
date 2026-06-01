@@ -13,7 +13,7 @@ docker compose up --build
 
 This starts PostgreSQL, Redis, the API server, and the worker. Migrations run automatically on API startup.
 
-API is available at `http://localhost:3000`  
+API is available at `http://localhost:3000/api`  
 Swagger UI at `http://localhost:3000/docs`
 
 ### Running locally (without Docker)
