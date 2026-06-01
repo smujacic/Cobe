@@ -1,0 +1,25 @@
+{
+  "name": "cobe-zadatak",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "migrate": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "generate": "prisma generate",
+    "worker": "node --env-file=.env --watch src/worker/index.js",
+    "test": "node --env-file=.env --test test/*.test.js"
+  },
+  "dependencies": {
+    "@fastify/env": "^6.0.0",
+    "@fastify/swagger": "^9.7.0",
+    "@fastify/swagger-ui": "^5.2.6",
+    "@prisma/client": "^6.0.0",
+    "bullmq": "^5.0.0",
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.0.0"
+  }
+}
